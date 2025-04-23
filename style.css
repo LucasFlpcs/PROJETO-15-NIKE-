@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body{
+    background: #ccee66;
+    color: white;
+    padding: 20px 160px;
+    height: 100vh;
+    overflow: hidden;
+}
+body::before{
+    content: '';
+    background: #202020;
+    width: 70%;
+    height: 120%;
+    position: absolute;
+    top: 0;
+    left: 750px;
+    transform: rotate(-65deg);
+}
+
+body::after{
+    content: 'nike';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 180px;
+    font-weight: bold;
+    opacity: 0.5;
+
+}
+
+.logo {
+
+    width: 80px;
+
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h1{
+    font-size: 80px;
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.botao-carrinho{
+    background: #a3be52;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao-carrinho:hover{
+    opacity: 0.7;
+}
+
+.imagem-tenis{
+    width: 800px;
+    transform: rotate(-25deg);
+    transition: 1s;
+}
+
+.caixa-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
+    z-index: 1;
+}
+
+.caixa-texto{
+    max-width: 500px;
+}
